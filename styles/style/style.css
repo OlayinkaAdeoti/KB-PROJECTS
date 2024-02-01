@@ -40,10 +40,13 @@ body {
     font-weight: bold;
     border-radius: 2rem;
     width: fit-content;
-    color: #b6a3cc;
     border-style: groove;
     border-color: black;
     transition: transform 0.8sec ease;
+}
+.btn a {
+    text-decoration: none;
+    color: #b6a3cc;
 }
 .btn:hover {
     opacity: 0.2;
@@ -60,7 +63,7 @@ body {
 .left-side h2 {
     font-size: 4rem;
     font-family: 'Dancing Script', cursive;
-font-family: 'Monoton', sans-serif;
+    font-family: 'Monoton', sans-serif;
     font-weight: bolder;
     color: #40196D;
 }
@@ -71,6 +74,38 @@ font-family: 'Monoton', sans-serif;
 
 .right-side {
     flex: 1;
+}
+.my-label {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 500px;
+    background-color: #DAF3FF;
+    padding: 10px 25px;
+}
+.first-section2 {
+    align-items: start;
+}
+.in-put2{
+    padding: 8px 10px;
+}
+.for-contact p {
+font-size: 20px;
+}
+.for-contact div {
+    display: flex;
+    flex-direction: row;
+}
+.for-contact div img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.my-label textarea{
+    border: none;
+}
+.contact-button2 {
+    width: fit-content;
 }
 .image-right img {
     width: 700px;
@@ -90,6 +125,10 @@ font-family: 'Monoton', sans-serif;
      gap: none;
      justify-self: center;
     } 
+    .first-section2{
+        margin-top: 30rem;
+        margin-bottom: 25rem;
+    }
     .left-side h2 {
         align-items: center;
     }
@@ -99,8 +138,12 @@ font-family: 'Monoton', sans-serif;
    .first-section{
     margin-top: 20rem;
     }
+
    .paragraph {
     width: 100%;
+   }
+   .my-label{
+    width: 350px;
    }
    } 
 
@@ -127,6 +170,20 @@ font-family: 'Monoton', sans-serif;
     color: #000;
     line-height: 3rem;
 }
+.my-about2a {
+    flex-direction: row;
+    justify-content: center;
+}
+.my-about2 {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+.my-about2 p {
+    line-height: normal;
+    font-size: 20px;
+    width: 400px;
+}
 .my-about p button {
     padding: 5px 30px;
     border-color: gray;
@@ -146,13 +203,47 @@ font-family: 'Monoton', sans-serif;
     flex-direction: column;
     align-items: start;
 }
+.whole-about2 {
+    margin-top: 4rem;
+}
 .image {
     width: 600px;
     height: 600px;
 }
+.i {
+    width: 20px;
+    height: 20px;
+}
+.reach-out {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    background-color: #312783;
+    padding: 2rem 0px;
+    color: white;
+    margin: 4rem 5rem;
+}
+.reach-out button{
+    background-color: #E17F09;
+    padding: 15px 25px;
+    align-items: top;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.reach-out button a {
+    text-decoration: none;
+    color: white;
+}
 @media only screen and (max-width: 640px){
     .first-section{
      margin-top: 17rem;
+    }
+    .first-section2{
+        margin-top: 30rem;
     }
     .left-side  {
         text-align: start;
@@ -202,6 +293,16 @@ font-family: 'Monoton', sans-serif;
     .whole-about {
         margin-top: 9rem;
     }
+    .reach-out {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 50px;
+        font-weight: bolder;
+    }
+    .reach-out {
+        width: 600px;
+     }
   
 }
 /* services */
@@ -277,6 +378,9 @@ h3 {
         width: 400px;
         font-size: 21px;
     }
+    .reach-out{
+        width: 400px;
+    }
 }
 @media only screen and (max-width: 450px){
     .services div p {
@@ -287,6 +391,9 @@ h3 {
     .p-div h3 {
         max-width: 1000px;
         line-height: 30px;
+    }
+    .reach-out{
+        width: 250px;
     }
 }
 .faq-section {
@@ -352,9 +459,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    background-image: url('/kB-second-project/styles/crane2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #DAF3FF;
     padding: 20px 0px;
     transition: 0.5s;
     position: relative;
