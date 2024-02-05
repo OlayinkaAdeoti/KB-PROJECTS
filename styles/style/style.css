@@ -2,10 +2,6 @@ body {
     background-color: rgb(253, 250, 250);
     padding: 0;
 }
-* {
-    padding: 0;
-    margin: 0;
-}
 .navbar {
     position: fixed;
     width: 100%;
@@ -135,12 +131,6 @@ font-size: 20px;
     .navbar-toggler {
         background-color: #9183a1;
     }
-}
-@media only screen and (max-width: 1080px){
-    .first-section {
-        margin-top: 10rem ;
-    }
-    
 }
 @media only screen and (max-width: 1070px){
     .first-section{
@@ -334,6 +324,9 @@ font-size: 20px;
      }
      .my-about2 {
         width: 400px;
+     }
+     .my-about2 h1 {
+        text-align: center;
      }
   
 }
