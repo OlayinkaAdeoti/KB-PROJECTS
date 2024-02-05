@@ -162,7 +162,7 @@ font-size: 20px;
    } 
    @media only screen and (max-width: 756px){
     .first-section{
-        padding-top:15rem;
+        padding-top:25rem;
         padding-bottom: 20rem;
         }
    }
@@ -192,6 +192,7 @@ font-size: 20px;
 .my-about2a {
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 .my-about2 {
     display: flex;
@@ -260,7 +261,7 @@ font-size: 20px;
      margin-top: 17rem;
     }
     .first-section2{
-        margin-top: 30rem;
+        padding-top: 40rem;
     }
     .left-side  {
         text-align: start;
@@ -650,6 +651,7 @@ h3 {
 @media only screen and (max-width: 900px){
     .footer1 {
         flex-direction: column;
+        align-items: center;
     }
 }
 @media only screen and (max-width: 640px){
