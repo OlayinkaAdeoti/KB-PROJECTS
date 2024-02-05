@@ -25,8 +25,22 @@ body {
     justify-content: space-between;
     font-size: 1.5rem;
     color: #40196D !important;
+    position: relative;
 }
-
+.my-navbar ul li a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 4px;
+    background-color: #ff6600; 
+    transition: bottom 0.3s ease; 
+    border-radius: 30px;
+}
+/* .my-navbar ul li a:hover::after {    
+    right: 0;
+} */
 .first-section {
     display: flex;
     margin-top: 9rem;
@@ -46,10 +60,10 @@ body {
 }
 .btn a {
     text-decoration: none;
-    color: #b6a3cc;
+    color: #7e50b3;
+    transition: background-color 0.3s ease;
 }
 .btn:hover {
-    opacity: 0.2;
     background-color: rgb(236, 228, 228);
     color: #40196D;
 }
@@ -120,7 +134,7 @@ font-size: 20px;
 @media only screen and (max-width: 1070px){
     .first-section{
      flex-direction: column;
-     margin-top: 30rem;
+     padding-top: 30rem;
      align-items: center;
      gap: none;
      justify-self: center;
@@ -136,7 +150,7 @@ font-size: 20px;
 }
 @media only screen and (max-width: 866px){
    .first-section{
-    margin-top: 20rem;
+    padding-top: 20rem;
     }
 
    .paragraph {
@@ -146,7 +160,12 @@ font-size: 20px;
     width: 350px;
    }
    } 
-
+   @media only screen and (max-width: 756px){
+    .first-section{
+        padding-top:15rem;
+        padding-bottom: 20rem;
+        }
+   }
  
 /* About us */
 .ab-t {
@@ -194,9 +213,7 @@ font-size: 20px;
     transition: transform 0.3sec ease;
 }
 .my-about p button:hover {
-    opacity: 0.9;
-    color: #a50f0f;
-    transform: scale(1.05);
+    background-color: #1d1a49;
 }
 .about-us {
     display: flex;
@@ -303,6 +320,9 @@ font-size: 20px;
     .reach-out {
         width: 600px;
      }
+     .my-about2 {
+        width: 400px;
+     }
   
 }
 /* services */
@@ -357,6 +377,31 @@ h3 {
     border-top-left-radius: 7rem;
     padding: 1rem 0rem;
 }
+@media only screen and (max-width: 1745px){
+    .first-section{
+        margin-top: 20rem;
+    }
+    .whole-about {
+        margin-top: 9rem;
+    }
+    .left-side h2 {
+        font-size: 50px;
+    }
+    .services div p {
+        width: 500px;
+        font-size: 21px;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .first-section{
+        margin-top: 10rem;
+    }
+    .services div p {
+        width: 350px;
+        font-size: 21px;
+    }
+
+}
 @media only screen and (max-width: 1010px){
     .services {
         flex-direction: column;
@@ -376,10 +421,12 @@ h3 {
     }
     .services div p {
         width: 400px;
-        font-size: 21px;
     }
     .reach-out{
         width: 400px;
+    }
+    .p-div h3 {
+        width: 300px;
     }
 }
 @media only screen and (max-width: 450px){
@@ -459,13 +506,16 @@ h3 {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    background-color: #DAF3FF;
+    background-image: url('/kB-second-project/styles/construction-work-site\ \(1\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
     padding: 20px 0px;
-    transition: 0.5s;
-    position: relative;
+    transition: transform 1s ease;
 }
-.contact:hover{
-    transform: translate(0.3sec);
+.contact:hover {
+    background-color: #6b5281;
 }
 .in-put {
     padding: 8px 30px;
@@ -480,7 +530,7 @@ h3 {
 .in-put::placeholder{
     position: absolute;
     pointer-events: none;
-    transition: o.2s ease-out;
+    transition: 0.2s ease-out;
 }
 .in-put:focus::placeholder{
     color: transparent;
@@ -494,30 +544,122 @@ h3 {
     transition: transform 1sec ease;
 }
 .contact-button:hover {
-    transform: scale(1.05);
-    opacity: 0.8;
-    background-color: #5e506e;
+    background-color: #3b3342;
 }
-.footer {
-    background-color: #f9f6fd;
-    padding: 70px;
-    text-align: center;
+/* footer */
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    text-align: start;
+    gap: 3rem;
+    justify-content: center;
+    background-color: #021218;
+    color: rgb(235, 223, 223);
+    padding: 5rem;
 }
-.footer h2 {
-    font-size: 2rem;
+
+.first div h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.first {
+    width: 320px;
+    gap: 3rem;
+}
+.first div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.first form input{
+   margin-bottom: 10px;
+   padding: 15px 9px;
+   background-color: #333333;
+   border: none;
+   color: wheat;
+}
+.first form button {
+    padding: 10px 92px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #FEB603;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.first form button:hover{
+     background-color: white;
+}
+.first form button a {
+    text-decoration: none;
+    color: rgb(14, 12, 12);
+}
+.second{
+    gap: 3rem;
+}
+.second div {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.second div h3{
+    width: 200px;
+}
+.third {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 300px;
+}
+.third ul li {
+    list-style-type: none;
     margin-bottom: 20px;
 }
-.footer p{
-    font-size: 17px;
-    margin-bottom: 10px;
+.third ul li a:hover {
+    color: #E17F09;
 }
-.footer a {
+.third ul li::before {
+    content: ">";
+    color: #E17F09;
+    margin-right: 5px;
+}
+.third ul li a{
     text-decoration: none;
-    font-weight: bold;
+    color: white;
+    transition: transform 0.5s ease;
 }
-.footer a:hover{
-    text-decoration: underline;
+.foutth {
+    text-align: start;
+    gap: 3rem;
 }
-
-
+.fourth div {
+    display: flex;
+    align-items: start;
+}
+.p-last {
+    text-align: center;
+    background-color: #141C1F;
+    color: white;
+    padding: 30px;
+    margin: 0px;
+}
+.p-tag {
+    font-size: 22px;
+    font-weight: 500;
+}
+@media only screen and (max-width: 900px){
+    .footer1 {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 640px){
+    .footer1 {
+        flex-direction: column;
+    }
+}
+.fourth div img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
   
